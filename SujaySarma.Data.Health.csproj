@@ -26,6 +26,8 @@
 		<ApplicationIcon>favicon.ico</ApplicationIcon>
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>D:\src\Codesign.snk</AssemblyOriginatorKeyFile>
+		<RepositoryUrl>https://github.com/sujayvsarma/SujaySarma.Data.Health</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/sujayvsarma/SujaySarma.Data.Health</PackageProjectUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -48,6 +50,13 @@
 		<Compile Remove="_docs\**" />
 		<EmbeddedResource Remove="_docs\**" />
 		<None Remove="_docs\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove=".gitattributes" />
+	  <None Remove=".gitignore" />
+	  <None Remove="CHANGELOG.md" />
+	  <None Remove="USAGE.md" />
 	</ItemGroup>
 
 	<ItemGroup>
