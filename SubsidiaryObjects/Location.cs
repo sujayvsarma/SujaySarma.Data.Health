@@ -1,6 +1,7 @@
-﻿using System.Text.Json.Serialization;
-using SujaySarma.Data.Health.BaseTypes;
+﻿using SujaySarma.Data.Health.BaseTypes;
 using SujaySarma.Data.Health.Constants;
+
+using System.Text.Json.Serialization;
 
 namespace SujaySarma.Data.Health.SubsidiaryObjects
 {
@@ -29,7 +30,7 @@ namespace SujaySarma.Data.Health.SubsidiaryObjects
         public Location()
             : base()
         {
-            Type = EnumLocationTypes.PrivateOffice;
+            Type = EnumLocationTypes.Unknown;
             Detail = string.Empty;
         }
     }

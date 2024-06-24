@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Text.Json.Serialization;
 
 using SujaySarma.Data.Health.Constants;
@@ -83,8 +84,21 @@ namespace SujaySarma.Data.Health.Types
         /// </summary>
         public PersonName()
         {
-            Salutation = EnumSalutations.Mx;
+            Salutation = EnumSalutations.Unknown;
             Prefix = FirstName = MiddleName = LastName = Suffix = null;
+        }
+
+        /// <summary>
+        /// Initialise
+        /// </summary>
+        /// <param name="first">First or given name</param>
+        /// <param name="last">Last or surname</param>
+        /// <param name="middle">Middle name</param>
+        public PersonName(string first, string? last = null, string? middle = null)
+        {
+            FirstName = first;
+            MiddleName = middle;
+            LastName = last;
         }
 
         /// <summary>

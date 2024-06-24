@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace SujaySarma.Data.Health.Types
 {
@@ -26,6 +27,32 @@ namespace SujaySarma.Data.Health.Types
         {
             From = new DateTimeUtc();
             To = From;
+        }
+
+        /// <summary>
+        /// Checks if the provided <paramref name="datetime"/> is within the range of this instance.
+        /// </summary>
+        /// <param name="datetime">A UTC DateTime value to test</param>
+        /// <returns>True if the provided <paramref name="datetime"/> is in range</returns>
+        public bool InRange(DateTimeUtc datetime)
+        {
+            if ((From >= datetime) && (To <= datetime))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Checks if the provided <paramref name="datetime"/> is within the range of this instance.
+        /// </summary>
+        /// <param name="datetime">A DateTime value to test</param>
+        /// <returns>True if the provided <paramref name="datetime"/> is in range</returns>
+        public bool InRange(DateTime datetime)
+        {
+            DateTimeUtc utc = datetime;
+            return InRange(utc);
         }
     }
 }

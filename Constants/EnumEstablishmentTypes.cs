@@ -10,10 +10,16 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumEstablishmentTypes
     {
         /// <summary>
+        /// Unknown or not provided
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Unknown or not provided")]
+        Unknown = 0,
+
+        /// <summary>
         /// Private practice with a single doctor
         /// </summary>
         [Display(Name = "Single doctor private practice", Description = "Private practice with a single doctor")]
-        SingleDoctorPractice = 0,
+        SingleDoctorPractice,
 
         /// <summary>
         /// Private practice with multiple doctors

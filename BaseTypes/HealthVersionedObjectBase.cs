@@ -1,6 +1,7 @@
-﻿using System;
+﻿using SujaySarma.Data.Health.Types;
+
+using System;
 using System.Text.Json.Serialization;
-using SujaySarma.Data.Health.Types;
 
 namespace SujaySarma.Data.Health.BaseTypes
 {

@@ -57,7 +57,7 @@ namespace SujaySarma.Data.Health.SubsidiaryObjects
 
             foreach (DateTimeRange dtr in TimeOff)
             {
-                if (dtr.From <= dateTime && dtr.To >= dateTime)
+                if (dtr.InRange(dateTime))
                 {
                     holidayCheckResult = false;
                     break;

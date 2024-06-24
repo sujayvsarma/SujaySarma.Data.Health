@@ -47,7 +47,7 @@ namespace SujaySarma.Data.Health.Personas
             : base(HealthObjectVersionInfo.INITIAL_VERSION)
         {
             Name = new EstablishmentName();
-            Type = EnumEstablishmentTypes.SingleDoctorPractice;
+            Type = EnumEstablishmentTypes.Unknown;
             Addresses = new List<PhysicalLocationAddress>();
             PhoneNumbers = new List<PhoneNumber>();
         }

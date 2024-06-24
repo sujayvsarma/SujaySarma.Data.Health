@@ -10,10 +10,16 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumPaymentMethods
     {
         /// <summary>
+        /// Unknown or not provided
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Unknown or not provided")]
+        Unknown = 0,
+
+        /// <summary>
         /// Cash
         /// </summary>
         [Display(Name = "Cash", Description = "Cash")]
-        Cash = 0,
+        Cash,
 
         /// <summary>
         /// Cheque

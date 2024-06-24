@@ -67,7 +67,7 @@ namespace SujaySarma.Data.Health.Personas
         {
             Name = new PersonName();
             DateOfBirth = new DateTimeUtc();
-            Gender = EnumGenders.PreferNotToSay;
+            Gender = EnumGenders.Unknown;
 
             Addresses = new List<PhysicalLocationAddress>();
             PhoneNumbers = new List<PhoneNumber>();

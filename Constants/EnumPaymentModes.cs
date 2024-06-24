@@ -10,10 +10,16 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumPaymentModes
     {
         /// <summary>
+        /// Unknown or not provided
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Unknown or not provided")]
+        Unknown = 0,
+
+        /// <summary>
         /// Single payment
         /// </summary>
         [Display(Name = "Single", Description = "Full payment as a single transaction")]
-        Single = 0,
+        Single,
 
         /// <summary>
         /// Split by method

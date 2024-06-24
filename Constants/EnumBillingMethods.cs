@@ -10,10 +10,16 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumBillingMethods
     {
         /// <summary>
+        /// Unknown method
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Unknown method")]
+        Unknown = 0,
+
+        /// <summary>
         /// Directly billed to the patient
         /// </summary>
         [Display(Name = "Direct", Description = "Directly, to the patient")]
-        Direct = 0,
+        Direct,
 
         /// <summary>
         /// Billed to patient's personal insurance

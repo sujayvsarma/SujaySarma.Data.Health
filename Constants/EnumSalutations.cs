@@ -12,11 +12,18 @@ namespace SujaySarma.Data.Health.Constants
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum EnumSalutations
     {
+
+        /// <summary>
+        /// Unknown salutation or not provided
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Salutation unknown or not provided")]
+        Unknown = 0,
+
         /// <summary>
         /// Gender-neutral
         /// </summary>
         [Display(Name = "Mx", Description = "Gender-neutral (unidentified as either Mr/Ms)")]
-        Mx = 0,
+        Mx,
 
         /// <summary>
         /// Mister

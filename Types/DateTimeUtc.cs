@@ -50,6 +50,17 @@ namespace SujaySarma.Data.Health.Types
         public DayOfWeek DayOfWeek => _value.DayOfWeek;
 
         /// <summary>
+        /// Time-only portion
+        /// </summary>
+        public TimeOnly Time => new TimeOnly(_value.Ticks);
+
+        /// <summary>
+        /// Date-only portion
+        /// </summary>
+        public DateOnly Date => new DateOnly(Year, Month, Day);
+
+
+        /// <summary>
         /// Initialise
         /// </summary>
         public DateTimeUtc()

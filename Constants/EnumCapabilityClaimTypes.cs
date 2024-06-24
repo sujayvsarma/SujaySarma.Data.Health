@@ -10,10 +10,16 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumCapabilityClaimTypes
     {
         /// <summary>
+        /// Unknown or not provided
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Unknown or not provided")]
+        Unknown = 0,
+
+        /// <summary>
         /// Is a qualification or degree
         /// </summary>
         [Display(Name = "Qualification", Description = "A degree, diploma or certification")]
-        Qualification = 0,
+        Qualification,
 
         /// <summary>
         /// Is an unqualified skill (eg: communication, listening)

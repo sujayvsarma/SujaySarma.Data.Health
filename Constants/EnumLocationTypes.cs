@@ -10,11 +10,10 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumLocationTypes
     {
         /// <summary>
-        /// (Default value) Location is unknown or not provided.
+        /// Unknown or not provided
         /// </summary>
-        [Display(Name = "Unknown (default)", Description = "Location is unknown or not provided")]
-        Unknown,
-
+        [Display(Name = "Unknown", Description = "Unknown or not provided")]
+        Unknown = 0,
 
         /// <summary>
         /// Someone's private office space

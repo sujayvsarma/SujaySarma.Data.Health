@@ -29,6 +29,12 @@ namespace SujaySarma.Data.Health.Types
         /// <summary>
         /// Returns a name that can be used for display purposes
         /// </summary>
+        /// <remarks>
+        ///     This function is opinionated. We prefer names in this order:
+        ///     1. BusinessName
+        ///     2. RegisteredName
+        ///     3. First non-NULL abbreviated name
+        /// </remarks>
         public string DisplayName
         {
             get

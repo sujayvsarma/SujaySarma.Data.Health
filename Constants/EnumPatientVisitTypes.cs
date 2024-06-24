@@ -10,10 +10,16 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumPatientVisitTypes
     {
         /// <summary>
+        /// Unknown or not provided
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Unknown or not provided")]
+        Unknown = 0,
+
+        /// <summary>
         /// A first visit or an introduction
         /// </summary>
         [Display(Name = "First visit", Description = "First visit or introductory visit")]
-        FirstVisitOrIntroduction = 0,
+        FirstVisitOrIntroduction,
 
         /// <summary>
         /// Follow up visit

@@ -10,6 +10,12 @@ namespace SujaySarma.Data.Health.Constants
     public enum EnumGenders
     {
         /// <summary>
+        /// Unknown or not provided
+        /// </summary>
+        [Display(Name = "Unknown", Description = "Unknown or not provided")]
+        Unknown = 0,
+
+        /// <summary>
         /// Male
         /// </summary>
         [Display(Name = "Male", Description = "Male or man")]
@@ -50,6 +56,12 @@ namespace SujaySarma.Data.Health.Constants
         /// </summary>
         [Display(Name = "Transgender", Description = "Gender identity differs from one assigned at birth")]
         Transgender,
+
+        /// <summary>
+        /// Other gender (option not provided in system)
+        /// </summary>
+        [Display(Name = "Other", Description = "Other gender (option not provided in system)")]
+        Other,
 
         /// <summary>
         /// Prefer not to say
